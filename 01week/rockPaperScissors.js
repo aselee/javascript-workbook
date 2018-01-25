@@ -8,11 +8,35 @@ const rl = readline.createInterface({
 });
 
 
-function rockPaperScissors(hand1, hand2) {
+/*function rockPaperScissors(hand1, hand2) {
+}*/
 
   // Write code here
+const rockPaperScissors=(h1, h2)=>{
+  if(h1 === h2) {
+    return("It's a tie!");//if h1 equals to h2, it is a tie.
 
+  }else if (h1 === "R"){ //if h1 equals to Rock.
+    if(h2 === "P"); //and if h2 equals to Paper.
+    return("Paper wins!"); //it will show that h2 wins.
+  }else{              //h2 must equal to Scissors.
+    return("Rock wins!"); //then h1 wins.
+
+  }else if(h1 === "P"){ //if h1 equals to Paper.
+    if(h2 === "R"); //and if h2 equals to Rock.
+    return("Paper wins!") //it will show that h1 wins.
+  }else{                  //h2 must equal to Scissors.
+    return("Scissors wins!") //it will show that h2 wins.
+
+  }else{              //"else if" is not needed, due to above conditions.
+    if(h2 === "R"); //if h2 equals to Rock.
+    return("Rock wins!") //it will show that Rock wins.
+  }else{                //h2 must equal to Paper.
+    return("Paper wins!") //then it will show that h2 wins.
+  }
 }
+
+  rockPaperScissors();
 
 function getPrompt() {
   rl.question('hand1: ', (answer1) => {
