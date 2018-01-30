@@ -12,29 +12,33 @@ const rl = readline.createInterface({
 }*/
 
   // Write code here
-const rockPaperScissors=(h1, h2)=>{
-  if(h1 === h2) {
-    return("It's a tie!");//if h1 equals to h2, it is a tie.
+  const rockPaperScissors = (h1, h2) => {
+    if (h1 === h2) {
+     return "Its a tie!"
 
-  }else if (h1 === "R"){ //if h1 equals to Rock.
-    if(h2 === "P"); //and if h2 equals to Paper.
-    return("Paper wins!"); //it will show that h2 wins.
-  }else{              //h2 must equal to Scissors.
-    return("Rock wins!"); //then h1 wins.
+    } else if (h1 === 'R') {
+      if (h2 === 'P') {
+        return "Paper Wins!" + "<br>" + "You beat me! Nice one!";
+      } else {
+        return "Rock Wins!" + "<br>" + "HAH! I win, you lose.";
+      }
 
-  }else if(h1 === "P"){ //if h1 equals to Paper.
-    if(h2 === "R"); //and if h2 equals to Rock.
-    return("Paper wins!") //it will show that h1 wins.
-  }else{                  //h2 must equal to Scissors.
-    return("Scissors wins!") //it will show that h2 wins.
+    } else if (h1 ==='P') {
+      if (h2 === 'R') {
+        return "Paper wIns!" + "<br>" + "You got me! Good job!";
+      } else {
+        return "Scissors wIns!" + "<br>" + "Wow, how?!";
+      }
 
-  }else{              //"else if" is not needed, due to above conditions.
-    if(h2 === "R"); //if h2 equals to Rock.
-    return("Rock wins!") //it will show that Rock wins.
-  }else{                //h2 must equal to Paper.
-    return("Paper wins!") //then it will show that h2 wins.
+    } else if (h1 === 'S') {
+      if (h2 === 'R') {
+        return "Rock wiNs!" + "<br>" + "I finally beat you!";
+      } else {
+        return "Scissors wiNs" + "<br>" + "You win again?! How?!";
+      }
+    }
+
   }
-}
 
   rockPaperScissors();
 
