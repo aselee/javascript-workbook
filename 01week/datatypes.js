@@ -72,6 +72,7 @@ function evaluatesToTrue(arg1, arg2) {
     return 'false' // return as false
   }
 }
+//made changes
 
 evaluatesToTrue(4, 6);
 evaluatesToTrue(null, 6);
