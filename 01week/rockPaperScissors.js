@@ -16,22 +16,22 @@ const rl = readline.createInterface({
     if (h1 === h2) {
      return "Its a tie!"
 
-    } else if (h1 === 'R') {
-      if (h2 === 'P') {
+   } else if (h1 === 'Rock') {
+      if (h2 === 'Paper') {
         return "Paper Wins!" + "<br>" + "You beat me! Nice one!";
       } else {
         return "Rock Wins!" + "<br>" + "HAH! I win, you lose.";
       }
 
-    } else if (h1 ==='P') {
-      if (h2 === 'R') {
+    } else if (h1 ==='Paper') {
+      if (h2 === 'Rock') {
         return "Paper wIns!" + "<br>" + "You got me! Good job!";
       } else {
         return "Scissors wIns!" + "<br>" + "Wow, how?!";
       }
 
-    } else if (h1 === 'S') {
-      if (h2 === 'R') {
+    } else if (h1 === 'Scissors') {
+      if (h2 === 'Rock') {
         return "Rock wiNs!" + "<br>" + "I finally beat you!";
       } else {
         return "Scissors wiNs" + "<br>" + "You win again?! How?!";
