@@ -23,8 +23,11 @@ function printBoard() {
   console.log('2 ' + board[2].join(' | '));
 }
 
+const players= ['X', 'Y']
+
 function horizontalWin() {
   // Your code here
+  
 }
 
 function verticalWin() {
