@@ -23,7 +23,14 @@ function printBoard() {
   console.log('2 ' + board[2].join(' | '));
 }
 
-const players= ['X', 'Y']
+const playerOne = 'X';
+const playerTwo = 'Y';
+
+// mark board
+// check to see if I won
+// IF i don’t win, switch players
+// IF you win, game’s over, reset board
+// reset players
 
 function horizontalWin() {
   // Your code here
@@ -44,6 +51,7 @@ function checkForWin() {
 
 function ticTacToe(row, column) {
   // Your code here
+
 }
 
 function getPrompt() {
