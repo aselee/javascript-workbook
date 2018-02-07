@@ -23,26 +23,37 @@ function printBoard() {
   console.log('2 ' + board[2].join(' | '));
 }
 
-const playerOne = 'X';
-const playerTwo = 'Y';
-
 // mark board
 // check to see if I won
 // IF i don’t win, switch players
 // IF you win, game’s over, reset board
 // reset players
 
+const playerOne = 'X';
+const playerTwo = 'O';
+
 function horizontalWin() {
   // Your code here
-  
+const horiWinArr1 = ['0','1','2']
+const horiWinArr2 = ['3','4','5']
+const horiWinArr3 = ['6','7','8']
+
+
+
+
 }
 
 function verticalWin() {
   // Your code here
+  const vertiWinArr1 = ['0','3','6']
+  const vertiWinArr2 = ['1','4','7']
+  const vertiWinArr3 = ['2','5','8']
 }
 
 function diagonalWin() {
   // Your code here
+  const diaWinArr1 = ['0','4','8']
+  const diaWinArr2 = ['2','4','6']
 }
 
 function checkForWin() {
