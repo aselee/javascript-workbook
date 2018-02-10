@@ -34,11 +34,10 @@ const playerTwo = 'O';
 
 function horizontalWin() {
   // Your code here
-const horiWinArr1 = ['0','1','2']
-const horiWinArr2 = ['3','4','5']
-const horiWinArr3 = ['6','7','8']
-
-
+  //if(board[0][0] === playerTurn && board[1][0] === playerTurn && board[0][2] === playerTurn)}
+  //return true;
+  //else if{board[0][1]}
+  if(board[0][0])
 
 
 }
