@@ -110,3 +110,46 @@ function getPrompt() {
 getPrompt();
 
 // Test here
+
+if (typeof describe === 'function') {
+  // Describing the function when it moves a block
+  describe('#towersOfHanoi()', () => {
+    it('should be able to move a block', () => {
+      towersOfHanoi('a', 'b');
+      assert.deepEqual(stacks, { a: [4, 3, 2], b: [1], c: [] });
+    });
+  });
+
+  // Describing the function isLegal
+  // It is illegal move when moving 'a' to 'b'
+  describe('#isLegal()', () => {
+    it('is an an illegal move', () => {
+      stacks = {
+        a: [4, 3, 2],
+        b: [1],
+        c: []
+      };
+      assert.equal(isLegal('a', 'b'), false);
+    });
+    // It is a legal move when moving ''
+    it('is a legal move', () => {
+      stacks = {
+        a: [4, 3, 2, 1],
+        b: [],
+        c: []
+      };
+      assert.equal(isLegal('a', 'c'), true);
+    });
+  });
+  // should be able to detect a win when stacks
+  describe('#checkForWin()', () => {
+    it('should detect a win', () => {
+      stacks = { a: [], b: [4, 3, 2, 1], c: [] };
+      assert.equal(checkForWin(), true);
+      stacks = { a: [1], b: [4, 3, 2], c: []  };
+      assert.equal(checkForWin(), false);
+    });
+  });
+} else {
+  getPrompt();
+}
