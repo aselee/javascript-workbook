@@ -68,3 +68,5 @@ const multiplyByTen = (obj) => {
   })
 }
 multiplyByTen(latestExchangeRate)
+
+// Pushing to git branch 'loops-practice'
