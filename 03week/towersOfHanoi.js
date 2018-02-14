@@ -107,8 +107,6 @@ function getPrompt() {
   });
 }
 
-getPrompt();
-
 // Test here
 
 if (typeof describe === 'function') {
