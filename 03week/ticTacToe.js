@@ -79,14 +79,22 @@ function diagonalWin() {
 
 function checkForWin() {
   // Your code here
-
+  if(horizontalWin()) {
+    return true;
+  } else if(verticalWin()) {
+    return true;
+  } else if(diagonalWin()) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function ticTacToe(row, column) {
   // Your code here
-
+  if(board[row][column] === '')
+  
 }
-
 function getPrompt() {
   printBoard();
   console.log("It's Player " + playerTurn + "'s turn.");
