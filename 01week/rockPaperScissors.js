@@ -11,6 +11,8 @@ const rl = readline.createInterface({
 /*function rockPaperScissors(hand1, hand2) {
 }*/
 
+// 2.17.18 Getting undefined for game results
+
   // Write code here
   const rockPaperScissors = (h1, h2) => {
     if (h1 === h2) {
@@ -18,26 +20,31 @@ const rl = readline.createInterface({
 
    } else if (h1 === 'Rock') {
       if (h2 === 'Paper') {
-        return "Paper Wins!" + "<br>" + "You beat me! Nice one!";
+        console.log("Paper Wins!" + " " + "You beat me! Nice one!")
+        return true;
       } else {
-        return "Rock Wins!" + "<br>" + "HAH! I win, you lose.";
+        console.log("Rock Wins!" + " " + "HAH! I win, you lose.")
+        return false;
       }
 
     } else if (h1 ==='Paper') {
       if (h2 === 'Rock') {
-        return "Paper wIns!" + "<br>" + "You got me! Good job!";
+        console.log("Paper wIns!" + " " + "You got me! Good job!")
+        return true;
       } else {
-        return "Scissors wIns!" + "<br>" + "Wow, how?!";
+        console.log("Scissors wIns!" + " " + "Wow, how?!")
+        return false;
       }
 
     } else if (h1 === 'Scissors') {
       if (h2 === 'Rock') {
-        return "Rock wiNs!" + "<br>" + "I finally beat you!";
+        console.log("Rock wiNs!" + " " + "I finally beat you!")
+        return true;
       } else {
-        return "Scissors wiNs" + "<br>" + "You win again?! How?!";
+        console.log("Scissors wiNs" + " " + "You win again?! How?!")
+        return false;
       }
     }
-
   }
 
   rockPaperScissors();
@@ -77,5 +84,3 @@ if (typeof describe === 'function') {
   getPrompt();
 
 }
-
-// pushing through git with changes
