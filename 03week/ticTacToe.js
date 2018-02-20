@@ -92,8 +92,14 @@ function checkForWin() {
 
 function ticTacToe(row, column) {
   // Your code here
-  if(board[row][column] === '')
-  
+  if(horizontalWin()) {
+    return true;
+  } else if(verticalWin()) {
+    return true;
+  } else if(diagonalWin()) {
+    return true;
+  }
+
 }
 function getPrompt() {
   printBoard();
