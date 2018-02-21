@@ -32,7 +32,7 @@ function printBoard() {
 const playerOne = 'X';
 const playerTwo = 'O';
 
-function horizontalWin() {
+const horizontalWin = () => {
   // Your code here
   if(board[0][0] === playerTurn && board[0][1] === playerTurn && board[0][2] ===
   playerTurn) {
@@ -48,7 +48,7 @@ function horizontalWin() {
   }
 }
 
-function verticalWin() {
+const verticalWin = () => {
   // Your code here
   if(board[0][0] === playerTurn && board[1][0] === playerTurn && board[2][0] ===
   playerTurn) {
@@ -64,7 +64,7 @@ function verticalWin() {
   }
 }
 
-function diagonalWin() {
+const diagonalWin = () => {
   // Your code here
   if(board[0][0] === playerTurn && board[1][1] === playerTurn && board[2][2] ===
   playerTurn) {
@@ -77,7 +77,7 @@ function diagonalWin() {
   }
 }
 
-function checkForWin() {
+const checkForWin = () => {
   // Your code here
   if(horizontalWin()) {
     return true;
@@ -90,7 +90,7 @@ function checkForWin() {
   }
 }
 
-function ticTacToe(row, column) {
+const ticTacToe = (row, column) => {
   // Your code here
   if(horizontalWin()) {
     return true;
